@@ -5,7 +5,7 @@ This repository contains my implementations of insertion sort, selection sort an
 
 ### Analysis of Worst and Best Cases
 
-### Insertion Sort
+#### Insertion Sort
 
 The intuition behind insertion sort is to collect elements one by one and do it in a way that this collection always remains sorted. In my implementation of insertion sort, an enhanced for loop with two loops is used. Outer one iterates over every *i*th **element from the first to the last and  the inner one is iterating over every element less than the *i*th element starting from *i*th to the  first. Inside the inner loop, a comparison is made and if it returns true, two elements in the array are swapped.
 
@@ -24,7 +24,7 @@ $$
 
 If we are curious about what the worst case scenario is, we can do the following observation: in the worst case when *i=N*, there should be *N-1* comparisons made in the inner loop and this is possible only if this element is smaller than all the other elements. Therefore the smallest element should be in the end of the array. A similar argument is true for *i=N-1, i=N-2...* as well. So the worse case is when elements are sorted in reverse.
 
-### Selection Sort
+#### Selection Sort
 
 What this sorting algorithm does is finding the minimum value after the *(i-1)*th element and assigning to *i*th element. To achieve this, an enhanced for loop is again used. The outer loop iterates for every *i*th element and the inner loop iterates from *i*th to the last element. Inside the inner loop there is a comparison made. 
 
@@ -38,7 +38,7 @@ This concludes that for every case, the algorithmic complexity is the same.
 
 One can easily expect that talking about the best or worse case situations for selection sort is not meaningful. And she would not be absolutely wrong. In the implementation presented here the number of comparisons and swaps are independent of the distribution. When the  minimum element after the *(i-1)*th element is the ith element, algorithm will swap that element with itself. Therefore number of operations is same and there are no best-worse cases. But actually it’s possible to reduce the number of swaps by doing the swaps only if the minimum element after the ith element is different from the ith element. With an implementation like this,  a sorted array would be the best case scenario without any swaps and the worst case would be any with *N-2* swaps, like an array sorted in reverse. Please beware that the algorithmic complexity for every case is still *$O(n^2)$* but for some of them less number of actions are performed which makes them better cases.
 
-### Quick Sort
+#### Quick Sort
 
 The goal of this algorithm is to divide the problem into smaller subproblems, which can be handled with less effort.  A recursive approach is used to achieve this divide-and-conquer strategy.
 
@@ -62,7 +62,7 @@ $$
 
 Notice that while doing the analysis, how a pivot is chosen is not mentioned since it doesn’t affect the worst-best case complexities. However, pivot choice matters when we try to find out  how these cases look like. For example, if the last element is chosen as the pivot, just like in our code, worst case scenario will appear in a sorted array. If the median is the pivot, then the worse case is an interesting array with the least or greatest element always in the middle, an example will be shown in the following chapter.
 
-### (c) Example Scenarios of Worst and Best Cases
+### Example Scenarios of Worst and Best Cases
 
 When analyzing the best-worst possible cases in detail in the previous chapter, we also talked a bit about how would these cases look like. In this chapter some example scenarios as arrays with ten elements will be given.
 
