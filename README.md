@@ -1,6 +1,6 @@
 # Sorting-Algorithms
 
-This repository contains my implementations of insertion sort, selection sort and quick sort. These algortihms' complexities were analyzed both theoriticaly and empricaly, as a project given in my CMPE160 course in Bogazici University. Emprical results will be uploaded in the following updatess.
+This repository contains my implementations of insertion sort, selection sort and quick sort. These algortihms' complexities were analyzed both theoriticaly and empricaly, as a project given in my CMPE160 course in Bogazici University. Emprical results will be uploaded in the following updates.
 
 
 ### Analysis of Worst and Best Cases
